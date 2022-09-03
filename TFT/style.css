@@ -1,0 +1,361 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+
+.web{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 42px;
+    padding-right: 42px;
+    position: relative;
+}
+.header{
+    width: 940px;
+    height:40px;
+    display: flex;
+    position: relative;
+}
+.header ul{
+    position: absolute;
+    left: 621px;
+    display: flex;
+    width: 215px;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+.header a{/*hover*/
+    height:22px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family: PingFang TC;
+    color: #3F5D45;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.basket{
+    position: absolute;
+    right:0;
+    top: 9px;
+}
+.cover{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.menu_products{
+    width:940px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.menu{
+    width:300px;
+}
+.menu h2,.menu a{
+    height:65px;
+    font-family: PingFang TC;
+    font-size: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    line-height: 33px;/*讓字上下置中*/
+    display: block;/*改變a為block*/
+}
+.menu h2{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+
+.menu a{
+    color: #3F5D45;
+    text-decoration: none;
+    border: #EAF0ED solid 1px;
+}
+.menu a:hover{
+    background: #EAF0ED;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+}
+.product{
+    width: 300px;
+    height: 436px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: relative; 
+}
+
+.today_special{
+    position: absolute;
+    background: #3F5D45;
+    left:20px;
+    top:0;
+    width: 36px;
+    height: 106.73px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:10.08px;
+    padding-bottom:9.24px;
+    font-family: PingFang TC;
+    color: #EAF0ED;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.heart{
+    position: absolute;
+    left: 258px;
+    top:19px;
+}
+.name_price{
+    display: flex;
+}
+.name_price h3{
+    border-right:1px solid #EAF0ED;
+    border-left:1px solid #EAF0ED;
+    color: #3F5D45;
+    font-size: 20px;
+    width: 173px;
+    height: 56px;
+    text-align: center;
+    line-height: 28px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.name_price p{
+    border-right:1px solid #EAF0ED;
+    color: #3F5D45;
+    font-size: 20px;
+    width: 127px;
+    height: 56px;
+    line-height: 28px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 25px;
+    padding-right: 20px;
+}
+.add {
+    width: 300px;
+    height: 65px;
+    line-height: 33px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 90px;
+    padding-right: 90px;
+    font-size: 24px;
+    background: #EAF0ED;
+    color: #3F5D45;
+    text-decoration: none;
+    display: block;
+}
+.product a:hover{ /*不能用.add會吃不到標籤*/
+    background: #3F5D45;
+    color:#EAF0ED;
+}
+.pages{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    margin-left: 640px;
+    margin-bottom: 60px;
+}
+
+.pages p1,.pages p2,.pages p3{
+    width:60px;
+    border-top: 1px solid #EAF0ED ;
+    border-bottom: 1px solid #EAF0ED ;
+    line-height: 28px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    font-size: 20px;
+    font-family: PingFang TC;
+    color:#3F5D45;
+}
+.pages img{
+    width:60px;
+    border: 1px solid #EAF0ED ;
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-bottom: 18px;
+    padding-right: 18px;
+}
+
+.pages p1,.pages p2:hover,.pages p3:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+    border: 1px solid #3F5D45 ;
+}
+
+.down{
+    
+    background: #FFE180;
+}
+.darkgreen{
+    background: #3F5D45;
+    height: 116px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.lightgreen{
+    background: #EAF0ED;
+    height: 341px;
+}
+.mail{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 780px;
+    background: #3F5D45 ;
+    display: flex;
+}
+.logo_light{
+    height: 40px;
+    width: 40px;
+    margin-top: 8px;
+    margin-right: 20px;
+}
+.mail p{
+    font-size: 24px;
+    font-family: Helvetica Neue;
+    color: #EAF0ED;
+    line-height: 29px;
+    height: 33px;
+    margin-top: 12px;
+    margin-bottom: 11px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 124px;
+}
+.input{
+    height: 56px;
+    width: 380px;
+    background: #EAF0ED;
+    display: flex; 
+    justify-content: space-between;
+}
+.mail_logo{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+}
+.arrow{
+    background: #FFE180;
+    height: 56px;
+    width: 64px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.footer{
+    height: 341px;
+    background: #EAF0ED;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 780px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 171.22px;
+    height: 26.6px;
+    margin-top: 38.9px;
+    margin-left: 0.07px;
+}
+
+.information{
+    margin-top: 115.5px;
+    margin-bottom: 30px;
+}
+.information a{
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    display: block;
+    color: #3F5D45;
+    font-family: Helvetica Neue;
+}
+.information a:hover,.header a:hover{/*hover*/
+    text-decoration: underline;
+}
+
+.icon{
+    width: 32px;
+    height: 32px;
+    margin-bottom: 30px;
+}
+.right_footer{
+    width: 258px;
+    height: 341px;
+    padding-top: 30px;
+}
+.right_footer h2{
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: 198px;
+    color: #3F5D45;
+}
+.copyright{
+    margin-top: 60px;
+    font-size: 16px;
+    font-family: Times;
+    color: #3F5D45;
+}
+
+
